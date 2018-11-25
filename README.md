@@ -28,17 +28,17 @@ Navigate to http://localhost:3050/
 ## Within the code you can see how to
 - Create different Docket Container Types and relate all of them
   1) React Client App
-  2) Python API with Flusk Framework
+  2) Python API with Flask Framework
   3) Python Console
   4) Postgres
   5) Redis
   6) NGINX
 - Use Postgres from a Docker Container with Python
 - Use Redis from a Docker Container with Python creating a subscription on the Web API App and subscribe to it on the Console App.
-- Send dynamic JSON responses from the Python Flusk Framework Web API
+- Send dynamic JSON responses from the Python Flask Framework Web API
 - Use Docker Compose to run and relate easily different Docker Components
 - Use NIGIX Container to run the React Client App
-- Use NIGIX Container as Reverse Proxy with Python Flusk Framework Web API
+- Use NIGIX Container as Reverse Proxy with Python Flask Framework Web API
 - Work with different AWS Amazon service types to deploy a multi container Docker application using AWS Elastic Beanstalk
 - Upload own Containers to Docker Hub and download them with the deployment
 - Use Travis CI for the Continuous Integration Workflow
