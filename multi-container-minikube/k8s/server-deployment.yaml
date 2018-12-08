@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: server-deployment
+  name: python-server-deployment
 spec:
   replicas: 3
   selector:
@@ -19,13 +19,13 @@ spec:
             - containerPort: 5000
           env:
             - name: REDIS_HOST
-              value: redis-cluster-ip-service
+              value: python-redis-cluster-ip-service
             - name: REDIS_PORT
               value: '6379'     
             - name: PGUSER
               value: postgres
             - name: PGHOST
-              value: postgres-cluster-ip-service
+              value: python-postgres-cluster-ip-service
             - name: PGDATABASE
               value: postgres
             - name: PGPORT
@@ -35,4 +35,3 @@ spec:
                 secretKeyRef:
                   name: pgpassword
                   key: PGPASSWORD
-           

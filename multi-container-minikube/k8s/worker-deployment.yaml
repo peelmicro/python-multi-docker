@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: worker-deployment
+  name: python-worker-deployment
 spec:
   replicas: 1
   selector:
@@ -17,6 +17,6 @@ spec:
           image: peelmicro/python-multi-worker
           env:
               - name: REDIS_HOST
-                value: redis-cluster-ip-service
+                value: python-redis-cluster-ip-service
               - name: REDIS_PORT
                 value: '6379'

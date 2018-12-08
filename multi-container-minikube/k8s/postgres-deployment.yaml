@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: postgres-deployment
+  name: python-postgres-deployment
 spec:
   replicas: 1
   selector:
@@ -15,7 +15,7 @@ spec:
       volumes:
         - name: postgres-storage
           persistentVolumeClaim: 
-            claimName: database-persistent-volume-claim
+            claimName: python-database-persistent-volume-claim
       containers: 
         - name: postgres
           image: postgres
