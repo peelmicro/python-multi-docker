@@ -71,3 +71,7 @@ Navigate to http://localhost:3050/
 ## In order to get to know what has been developed follow the course on
 
 https://www.udemy.com/docker-and-kubernetes-the-complete-guide
+
+## You can find more information on
+
+https://documentation.peelmicro.info/projects/python-multi-docker.html
